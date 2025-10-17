@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, Arial,
+    sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+article {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+article figure {
+  text-align: center;
+}
+
+article figure img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#bio {
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  li i {
+    font-size: 2rem;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: indigo;
+}
+
+.hobbies ul > li,
+.dislikes ul > li {
+  padding: 0.4rem;
+  /* border: 2px solid black; */
+  border-radius: 6px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  color: black;
+}
+
+p {
+  line-height: 1.5rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+.hobbies {
+  color: white;
+  li:nth-child(1) {
+    background: rgb(12, 131, 69);
+  }
+
+  li:nth-child(2) {
+    background: rgb(0, 159, 61);
+  }
+  li:nth-child(3) {
+    background: rgb(43, 215, 0);
+  }
+}
+
+.dislikes {
+  color: white;
+
+  li {
+    background: rgb(223, 59, 0);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  article {
+    flex-direction: row;
+    /* align-items: center; */
+    max-width: 700px;
+
+    border-radius: 12px;
+
+    gap: 2rem;
+
+    figure img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .content {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  a {
+    font-size: 1.1rem;
+  }
+
+  .hobbies,
+  .dislikes {
+    flex: 1;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HNG 13 Stage 0</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./main.js"></script>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <article data-testid="test-profile-card">
+        <figure>
+          <img
+            data-testid="test-user-avatar"
+            src="https://media.licdn.com/dms/image/v2/D4D03AQFBTuW6ddo_AQ/profile-displayphoto-scale_400_400/B4DZi6tM73GQAg-/0/1755479070290?e=1762387200&v=beta&t=-8Cn4QaVt2HifgZeDmSAjOlXOasTd-7LrzIOSfeqm_I"
+            alt="Umar Muhammad Muktar"
+          />
+          <!-- <figcaption>Umar Muhammad Muktar</figcaption> -->
+        </figure>
+
+        <div class="content">
+          <section>
+            <h2 data-testid="test-user-name">Umar Muhammad Muktar</h2>
+
+            <p id="bio" data-testid="test-user-bio">
+              Full Stack Developer with a great love for learning and
+              networking. Currently studying compilers and building one.
+            </p>
+
+            <p data-testid="test-user-time" id="time"></p>
+          </section>
+
+          <!-- Social Links -->
+          <section>
+            <h3>Social Links</h3>
+            <nav>
+              <ul data-testid="test-user-social-links">
+                <li data-testid="test-user-social-portfolio">
+                  <a
+                    href="https://ucodes.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferre"
+                  >
+                    <i class="fas fa-briefcase"></i>
+                  </a>
+                </li>
+                <li data-testid="test-user-social-github">
+                  <a
+                    href="https://github.com/python-fuse"
+                    target="_blank"
+                    rel="noopener noreferre"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li data-testid="test-user-social-linkedin">
+                  <a
+                    href="https://www.linkedin.com/in/umar-muktar-552a06268"
+                    target="_blank"
+                    rel="noopener noreferre"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li data-testid="test-user-social-x">
+                  <a
+                    href="https://x.com/UmarMuk83339233"
+                    target="_blank"
+                    rel="noopener noreferre"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li data-testid="test-user-social-youtube">
+                  <a
+                    href="https://youtube.com/@ucodes880"
+                    target="_blank"
+                    rel="noopener noreferre"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          <!-- Hobbies -->
+          <section class="hobbies">
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Reading</li>
+              <li>Coding</li>
+              <li>Chess</li>
+            </ul>
+          </section>
+
+          <section class="dislikes">
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Noise</li>
+              <li>Traffic</li>
+              <li>Losing</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -18,7 +18,7 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   padding: 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 main {
@@ -182,4 +182,9 @@ p {
   li:hover {
     opacity: 0.8;
   }
+}
+
+.active-link {
+  font-weight: bold;
+  text-decoration: underline;
 }

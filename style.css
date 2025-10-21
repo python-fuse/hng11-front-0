@@ -57,7 +57,8 @@ article figure img {
   text-align: justify;
 }
 
-ul {
+.profile-card-container ul,
+nav ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -171,6 +172,10 @@ p {
     flex: 1;
     font-size: 0.9rem;
   }
+  .about-page {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .hobbies,
@@ -187,4 +192,44 @@ p {
 .active-link {
   font-weight: bold;
   text-decoration: underline;
+}
+
+.about-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  max-width: 50dvw;
+  margin: auto;
+  gap: 3rem;
+  margin-top: 5rem;
+  flex-direction: column;
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-page {
+    flex-direction: row;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  line-height: 1.6rem;
+  font-size: 1.1rem;
+}
+
+.me {
+  width: 300px;
+  height: auto;
+  border-radius: 100%;
+}
+.goals ul {
+  list-style-type: square;
 }

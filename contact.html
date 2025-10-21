@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <script defer src="./scripts/main.js"></script>
+    <script defer src="./scripts/contact.js"></script>
     <!-- Font awesome -->
     <link
       rel="stylesheet"
@@ -31,5 +33,94 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Contact us page, functional, responsive, accessible, user-friendly, validation -->
+    <main data-test-id="test-contact-page">
+      <!-- Float in success message -->
+      <div class="success-message-container" id="success-message-container">
+        <p data-testid="test-contact-success" class="success-message">
+          Thank you for contacting us! We will get back to you shortly.
+        </p>
+      </div>
+
+      <section>
+        <section class="contact-header">
+          <h2>Contact Us</h2>
+
+          <p>Please fill out the form below to get in touch with us.</p>
+        </section>
+        <form
+          class="contact-form"
+          id="contact-form"
+          action="mailto:ummuktar917@gmail.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <div>
+            <label for="name">Full Name:</label>
+            <input
+              data-testid="test-contact-name"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+            <p data-testid="test-contact-error-name" class="error-message">Name required</p>
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              data-testid="test-contact-email"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <p data-testid="test-contact-error-email" class="error-message">Valid email required</p>
+          </div>
+
+          <div>
+            <label for="subject">Subject:</label>
+            <input
+              data-testid="test-contact-subject"
+              type="text"
+              id="subject"
+              name="subject"
+              required
+            />
+            <p
+              data-testid="test-contact-error-subject"
+              class="error-message"
+            >Subject required</p>
+          </div>
+
+          <div>
+            <label for="message">Message:</label>
+
+            <textarea
+              data-testid="test-contact-message"
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+            <p
+              data-testid="test-contact-error-message"
+              class="error-message"
+            >Message required</p>
+            </p>
+          </div>
+
+          <button
+            class="submit-button"
+            data-testid="test-contact-submit"
+            type="submit"
+          >
+            Send
+          </button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
